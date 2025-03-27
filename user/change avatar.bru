@@ -1,0 +1,15 @@
+meta {
+  name: change avatar
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{base_url}}/user/avatar
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(/home/user/6.jpg)
+}

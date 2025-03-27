@@ -1,0 +1,17 @@
+meta {
+  name: change displayname
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{base_url}}/user/displayname
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "displayName": "SomethingGamers"
+  }
+}
