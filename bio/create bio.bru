@@ -1,0 +1,18 @@
+meta {
+  name: create bio
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/bio/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "handle": "menobio",
+    "name": "Mester Kelemen"
+  }
+}
