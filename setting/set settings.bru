@@ -1,0 +1,17 @@
+meta {
+  name: set settings
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/setting
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "preferences.pronouns": "cheese/cheddar"
+  }
+}
