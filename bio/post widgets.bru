@@ -1,0 +1,34 @@
+meta {
+  name: post widgets
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base_url}}/bio/menobio2/widgets
+  body: json
+  auth: inherit
+}
+
+body:json {
+    [
+      {
+        "id": "123",
+        "genericSettings": {
+          "background": {
+            "hue": "340",
+            "saturation": "8",
+            "value": "16",
+            "opacity": "0.8"
+          }
+        },
+        "specificSettings": {
+          "title": "hello",
+          "description": "asdlkasjdlksajdlksajdklsajdkl",
+          "link": "https://youtube.com/"
+        },
+        "type": "link"
+      }
+    ]
+  
+}
