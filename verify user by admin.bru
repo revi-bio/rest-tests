@@ -1,0 +1,11 @@
+meta {
+  name: verify user by admin
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/admin/users/68231ed5fd045a898fc73a08/verify
+  body: none
+  auth: inherit
+}
