@@ -1,0 +1,21 @@
+meta {
+  name: add badge to users
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/admin/badge
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "users": [
+      "6825c0f0f99ee610ab2dbc36"
+    ],
+    "badgeName": "fasz",
+    "badgeIcon": "diversity_2"
+  }
+}
